@@ -2,7 +2,7 @@ interface ResultDisplayProps {
   data: unknown;
 }
 
-export function ResultDisplay({ data }: ResultDisplayProps) {
+export function ResultDisplay({ data }: ResultDisplayProps): JSX.Element {
   return (
     <div className="bg-card text-card-foreground rounded-lg border shadow-sm">
       <div className="p-6 space-y-1.5">

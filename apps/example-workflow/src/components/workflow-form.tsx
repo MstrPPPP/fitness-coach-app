@@ -102,7 +102,7 @@ export function WorkflowForm() {
         </div>
       )}
 
-      {result && <ResultDisplay data={result} />}
+      {result ? (<ResultDisplay data={result as Record<string, unknown>} />) : null}
     </div>
   );
 }
