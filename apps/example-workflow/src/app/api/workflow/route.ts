@@ -30,7 +30,12 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    return NextResponse.json({ success: true, data: result.data });
+    // n8n returns array of items - extract first item's data
+    const responseData = Array.isArray(result.data)
+      ? result.data[0]
+      : result.data;
+
+    return NextResponse.json({ success: true, data: responseData });
   } catch (error) {
     console.error("Workflow API error:", error);
     return NextResponse.json(

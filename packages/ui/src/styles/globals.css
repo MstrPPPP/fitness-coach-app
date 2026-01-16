@@ -4,48 +4,91 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Sage green palette */
+    --sage-50: 138 30% 97%;
+    --sage-100: 138 25% 94%;
+    --sage-200: 138 20% 87%;
+    --sage-300: 138 18% 75%;
+    --sage-400: 138 16% 60%;
+    --sage-500: 138 15% 45%;
+    --sage-600: 138 17% 35%;
+    --sage-700: 138 20% 28%;
+    --sage-800: 138 22% 22%;
+    --sage-900: 138 25% 15%;
+
+    /* Warm neutrals */
+    --warm-50: 30 20% 98%;
+    --warm-100: 30 15% 95%;
+    --warm-200: 30 12% 88%;
+    --warm-300: 30 10% 75%;
+    --warm-400: 30 8% 55%;
+    --warm-500: 30 6% 40%;
+
+    /* Base colours using sage theme */
+    --background: var(--warm-50);
+    --foreground: 222.2 20% 12%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222.2 20% 12%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --popover-foreground: 222.2 20% 12%;
+    --primary: var(--sage-600);
+    --primary-foreground: 0 0% 100%;
+    --secondary: var(--sage-100);
+    --secondary-foreground: var(--sage-800);
+    --muted: var(--warm-100);
+    --muted-foreground: var(--warm-500);
+    --accent: var(--sage-100);
+    --accent-foreground: var(--sage-800);
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-    --radius: 0.5rem;
+    --destructive-foreground: 0 0% 100%;
+    --border: var(--warm-200);
+    --input: var(--warm-200);
+    --ring: var(--sage-500);
+    --radius: 0.75rem;
+
+    /* Chat-specific colours */
+    --coach-bg: var(--sage-100);
+    --coach-border: var(--sage-200);
+    --user-bg: var(--sage-600);
+    --user-text: 0 0% 100%;
+
+    /* Level tier colours */
+    --level-bronze: 30 60% 50%;
+    --level-silver: 0 0% 65%;
+    --level-gold: 45 80% 50%;
+    --level-platinum: 200 20% 70%;
+    --level-diamond: 200 100% 70%;
+
+    /* Streak colour */
+    --streak-flame: 20 90% 55%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 222.2 25% 8%;
     --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
+    --card: 222.2 25% 12%;
     --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
+    --popover: 222.2 25% 12%;
     --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --primary: var(--sage-400);
+    --primary-foreground: 222.2 25% 8%;
+    --secondary: var(--sage-800);
+    --secondary-foreground: var(--sage-100);
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: var(--sage-800);
+    --accent-foreground: var(--sage-100);
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --ring: var(--sage-400);
+
+    /* Chat-specific colours (dark mode) */
+    --coach-bg: var(--sage-800);
+    --coach-border: var(--sage-700);
+    --user-bg: var(--sage-500);
+    --user-text: 0 0% 100%;
   }
 }
 
