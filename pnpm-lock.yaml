@@ -12,7 +12,7 @@ importers:
         specifier: ^3.2.4
         version: 3.8.0
 
-  apps/example-workflow:
+  apps/fitness-coach:
     dependencies:
       '@hookform/resolvers':
         specifier: ^3.3.4
